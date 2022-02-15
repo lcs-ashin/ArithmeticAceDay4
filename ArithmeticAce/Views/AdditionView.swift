@@ -10,8 +10,8 @@ import SwiftUI
 struct AdditionView: View {
     
     // MARK: Stored properties
-    @State var augend = Int.random(in: 6...72)
-    @State var addend = Int.random(in: 6...72)
+    @State var augend = Int.random(in: 1...143)
+    @State var addend = 0
     
     // This string contains whatever the user types in
     @State var inputGiven = ""
@@ -98,8 +98,8 @@ struct AdditionView: View {
                 
                 Button(action: {
                     // Generate a new question
-                    augend = Int.random(in: 6...72)
-                    addend = Int.random(in: 6...72)
+                    augend = Int.random(in: 1...144)
+                    addend = Int.random(in: 1...144 - augend)
                     
                     // Reset properties that track what's happening with the current question
                     answerChecked = false
@@ -133,6 +133,10 @@ struct AdditionView: View {
         }
         .padding(.horizontal)
         .font(.system(size: 72))
+        // This block of code runs once when the view is loaded
+        .task {
+            addend = Int.random(in: 1...144 - augend)
+        }
         
     }
 }
