@@ -18,6 +18,7 @@
 		81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDA62D27B160FF002471AE /* MultiplicationView.swift */; };
 		81FDA63027B16100002471AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FDA62F27B16100002471AE /* Assets.xcassets */; };
 		81FDA63327B16100002471AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FDA63227B16100002471AE /* Preview Assets.xcassets */; };
+		8A72C23E27BBEBEC0041E59D /* QuestionPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72C23D27BBEBEC0041E59D /* QuestionPresentationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		81FDA62D27B160FF002471AE /* MultiplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationView.swift; sourceTree = "<group>"; };
 		81FDA62F27B16100002471AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81FDA63227B16100002471AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A72C23D27BBEBEC0041E59D /* QuestionPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresentationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				8113966A27B422FB00E5B829 /* LottieView.swift */,
+				8A72C23D27BBEBEC0041E59D /* QuestionPresentationView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */,
+				8A72C23E27BBEBEC0041E59D /* QuestionPresentationView.swift in Sources */,
 				812B4B6427B319C5003A469B /* DivisionView.swift in Sources */,
 				81FDA62C27B160FF002471AE /* ArithmeticAceApp.swift in Sources */,
 				81BE3A9427B2DAE800880E99 /* AdditionView.swift in Sources */,
