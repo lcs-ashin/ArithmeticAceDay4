@@ -21,6 +21,7 @@
 		8A72C23E27BBEBEC0041E59D /* QuestionPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72C23D27BBEBEC0041E59D /* QuestionPresentationView.swift */; };
 		8A72C24027BBF0520041E59D /* AnswerAndResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72C23F27BBF0520041E59D /* AnswerAndResultView.swift */; };
 		8A72C24227BC9A940041E59D /* ReactionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72C24127BC9A940041E59D /* ReactionAnimationView.swift */; };
+		8A72C24427BC9DFA0041E59D /* AnswerCheckButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72C24327BC9DFA0041E59D /* AnswerCheckButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8A72C23D27BBEBEC0041E59D /* QuestionPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresentationView.swift; sourceTree = "<group>"; };
 		8A72C23F27BBF0520041E59D /* AnswerAndResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerAndResultView.swift; sourceTree = "<group>"; };
 		8A72C24127BC9A940041E59D /* ReactionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionAnimationView.swift; sourceTree = "<group>"; };
+		8A72C24327BC9DFA0041E59D /* AnswerCheckButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCheckButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				8A72C23D27BBEBEC0041E59D /* QuestionPresentationView.swift */,
 				8A72C23F27BBF0520041E59D /* AnswerAndResultView.swift */,
 				8A72C24127BC9A940041E59D /* ReactionAnimationView.swift */,
+				8A72C24327BC9DFA0041E59D /* AnswerCheckButtonView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				8113966B27B422FB00E5B829 /* LottieView.swift in Sources */,
 				8A72C24227BC9A940041E59D /* ReactionAnimationView.swift in Sources */,
 				8113965827B3D32100E5B829 /* SubtractionView.swift in Sources */,
+				8A72C24427BC9DFA0041E59D /* AnswerCheckButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

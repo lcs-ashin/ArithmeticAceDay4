@@ -42,31 +42,12 @@ struct AdditionView: View {
 
             ZStack {
                 
-                Button(action: {
-                    
-                    // Answer has been checked!
-                    answerChecked = true
-                    
-                    // Convert the input given to an integer, if possible
-                    guard let sumGiven = Int(inputGiven) else {
-                        // Sadness, not a number
-                        answerCorrect = false
-                        return
-                    }
-                    
-                    // Check the answer!
-                    if sumGiven == correctSum {
-                        // Celebrate! 👍🏼
-                        answerCorrect = true
-                    } else {
-                        // Sadness, they gave a number, but it's correct 😭
-                        answerCorrect = false
-                    }
-                }, label: {
-                    Text("Check Answer")
-                        .font(.largeTitle)
-                })
-                    .padding()
+                AnswerCheckButtonView(answerGiven: "sumGiven",
+                                      correctAnswer: correctSum,
+                                      answerChecked: $answerChecked,
+                                      answerCorrect: $answerCorrect,
+                                      inputGiven: $inputGiven)
+                .padding()
                     .buttonStyle(.bordered)
                 // Only show this button when an answer has not been checked
                     .opacity(answerChecked == false ? 1.0 : 0.0)
