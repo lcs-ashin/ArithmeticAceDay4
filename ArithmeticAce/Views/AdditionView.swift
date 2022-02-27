@@ -74,9 +74,24 @@ struct AdditionView: View {
                 
             }
          
-            // Reaction animation
-            ReactionAnimationView(answerChecked: answerChecked,
-                                  answerCorrect: answerCorrect)
+//            // Reaction animation
+//            ReactionAnimationView(answerChecked: answerChecked,
+//                                  answerCorrect: answerCorrect)
+            
+            // List of prior questions
+            List {
+                HStack {
+                    Text("143 + 1 = 144")
+                        .font(.title3)
+                    
+                    Spacer()
+                    
+                    AnswerAndResultView(answerChecked: answerChecked,
+                                        answerCorrect: answerCorrect,
+                                        inputGiven: $inputGiven)
+                        .font(.system(size: 25))
+                }
+            }
             Spacer()
         }
         .padding(.horizontal)
