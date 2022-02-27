@@ -22,6 +22,9 @@ struct AdditionView: View {
     // Was the answer given actually correct?
     @State var answerCorrect = false
     
+    // List of prior questions
+    @State var priorQuestions = []
+    
     // MARK: Computed properties
     // What is the correct sum?
     var correctSum: Int {
@@ -79,17 +82,23 @@ struct AdditionView: View {
 //                                  answerCorrect: answerCorrect)
             
             // List of prior questions
-            List {
+            List() {
                 HStack {
-                    Text("143 + 1 = 144")
-                        .font(.title3)
+                    Group {
+                        Text("\(augend)")
+                        Text("+")
+                        Text("\(addend)")
+                        Text("=")
+                        Text("\(correctSum)")
+                    }
+                        .font(.title2)
                     
                     Spacer()
                     
                     AnswerAndResultView(answerChecked: answerChecked,
                                         answerCorrect: answerCorrect,
                                         inputGiven: $inputGiven)
-                        .font(.system(size: 25))
+                        .font(.system(size: 27))
                 }
             }
             Spacer()
